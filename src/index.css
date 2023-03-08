@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Coming+Soon&family=Poppins:wght@300;400;500;600&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Coming+Soon&family=Poppins:wght@300;400;500;600&display=swap");
 
 * {
   margin: 0;
@@ -12,9 +11,9 @@
 }
 
 :root {
-  --color-bg: #1f1f38;
-  --color-bg-variant: #2c2c6c;
-  --color-primary: #4db5ff;
+  --color-bg: #0d0d0d;
+  --color-bg-variant: #1b1b3a;
+  --color-primary: #00bf63;
   --color-primacy-variant: rgba(77, 181, 255, 0.4);
   --color-white: #fff;
   --color-light: rgba(255, 255, 255, 0.6);
@@ -23,7 +22,7 @@
 
   --container-widht-lg: 75%;
   --container-widht-md: 86%;
-  --container-widht-ms: 90%,
+  --container-widht-sm: 90%;
 }
 
 html {
@@ -34,19 +33,21 @@ html {
   display: none;
 }
 
-body{
-  font-family: 'Poppins', sans-serif;
+body {
+  font-family: "Montserrat Thin italic", sans-serif;
   background: var(--color-bg);
   color: var(--color-white);
   line-height: 1.7;
-  background-image: url(../src/assets/fondo.png);
+  background-image: url(./assets/fondo.png);
 }
 
 /* ---------------- GENERAL STYLESS --------------*/
-
 .container {
   width: var(--container-widht-lg);
   margin: 0 auto;
+}
+h1 {
+  font-family: "Shrikhand";
 }
 
 h1,
@@ -65,14 +66,11 @@ section {
   margin-top: 8rem;
 }
 
-section > h2, section h5 {
+section > h2,
+section h5 {
   text-align: center;
   color: var(--color-light);
 }
-bac
-
-
-
 
 section > h2 {
   color: var(--color-primary);
@@ -83,13 +81,13 @@ section > h2 {
   color: var(--color-light);
 }
 
-a{
+a {
   color: var(--color-primary);
   transition: var(--transition);
 }
 
 a:hover {
-  color: var(--color-white);  
+  color: var(--color-white);
 }
 
 .btn {
@@ -120,25 +118,24 @@ img {
   object-fit: cover;
 }
 
-/* ---- MEDIA QUERIES (MEDIUM DEVICES)-------*/
-
+/* ---------------- MEDIA QUERIES (MEDIUM DEVICES) --------------*/
 @media screen and (max-width: 1024px) {
   .container {
-    width: var(--container-width-md);
+    width: var(--container-widht-md);
   }
 
-    section {
-      margin-top: 6rem;
-    }
+  section {
+    margin-top: 8rem;
   }
+}
 
-
-/* ------------- MEDIA QUERIES (SMALL DEVICES)-------*/
-
+/* ---------------- MEDIA QUERIES (SMALL DEVICES) --------------*/
 @media screen and (max-width: 600px) {
   .container {
-    width: var(--container-width-sm);}
-    section > h2 {
-      margin-bottom: 2rem;
-    }
+    width: var(--container-widht-ms);
   }
+
+  section > h2 {
+    margin-top: 2rem;
+  }
+}
