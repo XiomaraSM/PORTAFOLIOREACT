@@ -9,6 +9,55 @@ const Services = () => {
       <h2>Servicios</h2>
 
       <div className="container services__container">
+        {/* FRONTEND SERVICES */}
+        <article className="service">
+          <div className="service__head">
+            <h3>Desarrollo Frontend</h3>
+          </div>
+
+          <ul className="service__list">
+            <li>
+              <BiCheck className="service__list-icon" />
+              <p>Diseño de interfaces con HTML y CSS básico.</p>
+            </li>
+            <li>
+              <BiCheck className="service__list-icon" />
+              <p>Maquetación de sitios web responsive con CSS y frameworks.</p>
+            </li>
+            <li>
+              <BiCheck className="service__list-icon" />
+              <p>Animaciones simples con CSS y JavaScript.</p>
+            </li>
+            <li>
+              <BiCheck className="service__list-icon" />
+              <p>Optimización de la velocidad de carga y accesibilidad web.</p>
+            </li>
+          </ul>
+        </article>
+
+        {/* BACKEND SERVICES */}
+        <article className="service">
+          <div className="service__head">
+            <h3>Desarrollo Backend</h3>
+          </div>
+
+          <ul className="service__list">
+            <li>
+              <BiCheck className="service__list-icon" />
+              <p>Manejo básico de bases de datos con MySQL o MongoDB.</p>
+            </li>
+            <li>
+              <BiCheck className="service__list-icon" />
+              <p>Desarrollo de API’s con Node.js.</p>
+            </li>
+            <li>
+              <BiCheck className="service__list-icon" />
+              <p>Integración de bases de datos a aplicaciones web.</p>
+            </li>
+          </ul>
+        </article>
+
+        {/* UI/UX DESIGN */}
         <article className="service">
           <div className="service__head">
             <h3>Diseño UI/UX</h3>
@@ -17,85 +66,50 @@ const Services = () => {
           <ul className="service__list">
             <li>
               <BiCheck className="service__list-icon" />
-              <p>
-                Diseño de interfaces gráficas de usuario para aplicaciones web y
-                móviles con Figma
-              </p>
+              <p>Diseño de interfaces gráficas con Figma.</p>
             </li>
             <li>
               <BiCheck className="service__list-icon" />
-              <p>Creación de prototipos interactivos en Figma</p>
+              <p>Creación de prototipos interactivos en Figma.</p>
             </li>
             <li>
               <BiCheck className="service__list-icon" />
-              <p>
-                Análisis y evaluación de la experiencia del usuario (UX) y
-                recomendaciones de mejora.
-              </p>
+              <p>Análisis UX y recomendaciones de mejora.</p>
             </li>
             <li>
               <BiCheck className="service__list-icon" />
-              <p>
-                Diseño de gráficos y elementos visuales para aplicaciones y
-                sitios web.
-              </p>
-            </li>
-            <li>
-              <BiCheck className="service__list-icon" />
-              <p>
-                Trabajo en colaboración con desarrolladores para implementar
-                diseños en código.
-              </p>
+              <p>Colaboración con desarrolladores para implementación de diseño.</p>
             </li>
           </ul>
         </article>
-        {/* END OF UI/UX */}
 
+        {/* GRAPHIC DESIGN WITH CANVA */}
         <article className="service">
           <div className="service__head">
-            <h3>Desarrollo Web</h3>
+            <h3>Diseño Gráfico</h3>
           </div>
 
           <ul className="service__list">
             <li>
               <BiCheck className="service__list-icon" />
-              <p>
-                Creación de diseños de sitios web simples y atractivos
-                utilizando HTML y CSS básico.
-              </p>
+              <p>Creación de iconos y logotipos básicos con Canva.</p>
             </li>
             <li>
               <BiCheck className="service__list-icon" />
-              <p>
-                Maquetación de sitios web responsive utilizando CSS o framework
-                CSS.
-              </p>
+              <p>Diseño de gráficos vectoriales simples con Canva.</p>
             </li>
             <li>
               <BiCheck className="service__list-icon" />
-              <p>
-                Implementación de animaciones simples utilizando CSS y/o
-                JavaScript.
-              </p>
+              <p>Creación de material visual para redes sociales.</p>
             </li>
             <li>
               <BiCheck className="service__list-icon" />
-              <p>
-                Mejora de la usabilidad y accesibilidad de sitios web
-                existentes.
-              </p>
-            </li>
-            <li>
-              <BiCheck className="service__list-icon" />
-              <p>
-                Optimización de la velocidad de carga de sitios web utilizando
-                técnicas de compresión y optimización de imágenes y código.
-              </p>
+              <p>Edición de imágenes y elementos gráficos para webs y redes sociales.</p>
             </li>
           </ul>
         </article>
-        {/* WEB DEVELOPED */}
 
+        {/* CONTENT CREATION */}
         <article className="service">
           <div className="service__head">
             <h3>Creación de Contenido</h3>
@@ -104,42 +118,22 @@ const Services = () => {
           <ul className="service__list">
             <li>
               <BiCheck className="service__list-icon" />
-              <p>
-                Creación y diseño de iconos, logotipos y gráficos vectoriales
-                basicos con Canva
-              </p>
+              <p>Creación de artículos y blogs para sitios web o redes sociales.</p>
             </li>
             <li>
               <BiCheck className="service__list-icon" />
-              <p>
-                Creación de artículos para sitios web, blogs o redes sociales
-                que estan comenzando
-              </p>
+              <p>Producción de videos básicos para plataformas sociales como YouTube, TikTok, Instagram.</p>
             </li>
             <li>
               <BiCheck className="service__list-icon" />
-              <p>
-                creación de videos basicos para plataformas como YouTube,
-                TikTok, reels de instagram y/o facebook
-              </p>
+              <p>Edición de videos y contenido visual para mejorar calidad y atraer audiencia.</p>
             </li>
             <li>
               <BiCheck className="service__list-icon" />
-              <p>
-                Edición de videos existentes para mejorar la calidad o crear
-                contenido para redes sociales
-              </p>
-            </li>
-            <li>
-              <BiCheck className="service__list-icon" />
-              <p>
-                Toma de fotografías de productos, eventos o lugares para aplicar
-                en redes sociales
-              </p>
+              <p>Toma de fotografías de productos, eventos o lugares.</p>
             </li>
           </ul>
         </article>
-        {/* END OF CONTENT CREATION */}
       </div>
     </section>
   );

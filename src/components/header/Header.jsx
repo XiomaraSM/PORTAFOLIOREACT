@@ -7,10 +7,12 @@ import HeaderSocials from "./HeaderSocials";
 const Header = () => {
   return (
     <header>
-      <div className="container .header__container">
+      <div className="container header__container">
         <h5>Hola! Soy</h5>
-        <h1 id="header">Xiomara Sanchez Moreno</h1>
-        <h5 className="text-light">Programadora Fullstack</h5>
+        <h1 id="header">Xiomara Sánchez Moreno</h1>
+        <h5 className="text-light">
+          Entrenadora | Deportista | Bailarina | Influencer | Desarrolladora Fullstack | Wigmara
+        </h5>
         <CTA />
         <HeaderSocials />
 
@@ -19,7 +21,6 @@ const Header = () => {
         </div>
 
         <a href="#contact" className="scroll_down">
-          {" "}
           Sigue bajando
         </a>
       </div>

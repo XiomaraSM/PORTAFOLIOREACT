@@ -1,7 +1,6 @@
 import React, { useRef } from "react";
 import "./contact.css";
 import { CiMail } from "react-icons/ci";
-import { BsTelegram } from "react-icons/bs";
 import { BsWhatsapp } from "react-icons/bs";
 import emailjs from "@emailjs/browser";
 
@@ -28,6 +27,7 @@ const Contact = () => {
         }
       );
   };
+
   return (
     <section id="contact">
       <h5>Ponerse en Contacto</h5>
@@ -44,11 +44,11 @@ const Contact = () => {
             </a>
           </article>
           <article className="contact__option">
-            <BsTelegram className="contact__option-icon" />
-            <h4>Telegram</h4>
+            {/* Cambié el enlace de Telegram por el de Linktree */}
+            <h4>Linktree</h4>
             <h5>MaraHekapoo</h5>
-            <a href="https://t.me/mara_hekapoo" target={"blank"}>
-              Enviar un Mensaje
+            <a href="https://linktr.ee/mara_hekapoo" target={"blank"}>
+              Visita mi Linktree
             </a>
           </article>
           <article className="contact__option">
@@ -60,7 +60,7 @@ const Contact = () => {
             </a>
           </article>
         </div>
-        {/*END OF CONTACT OPTIONS*/}
+        {/* END OF CONTACT OPTIONS */}
 
         <form ref={form} onSubmit={sendEmail}>
           <input
